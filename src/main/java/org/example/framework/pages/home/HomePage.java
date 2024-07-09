@@ -1,7 +1,6 @@
 package org.example.framework.pages.home;
 
 import org.example.framework.pages.BasePage;
-import org.example.framework.pages.authentication.NavigateToAuthentication;
 
 public class HomePage extends BasePage {
 

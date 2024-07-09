@@ -1,8 +1,8 @@
-package org.example.framework.pages.authentication;
+package org.example.framework.pages.home;
 
-import org.example.framework.enums.LogType;
 import org.example.framework.pages.BasePage;
-import org.example.framework.utils.LoggerUtils;
+import org.example.framework.pages.authentication.LoginPage;
+import org.example.framework.pages.authentication.RegisterPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

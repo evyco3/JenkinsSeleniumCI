@@ -21,10 +21,10 @@ public class BasePage {
     }
 
 
-    private WebElement waitForElementToBeVisible(WebElement element) {
+    protected WebElement waitForElementToBeVisible(WebElement element) {
             FluentWait<WebDriver> wait = new FluentWait<>(driver)
-                    .withTimeout(Duration.ofSeconds(30))
-                    .pollingEvery(Duration.ofSeconds(2))
+                    .withTimeout(Duration.ofSeconds(8))
+                    .pollingEvery(Duration.ofSeconds(1))
                     .ignoring(NoSuchElementException.class)
                     .ignoring(StaleElementReferenceException.class)
                     .ignoring(TimeoutException.class)
@@ -60,8 +60,8 @@ public class BasePage {
 
     protected String getText(WebElement element,String elementName){
        return ActionUtils.execFunction(getClass(),()->
-                waitForElementToBeVisible(element).getText(),
-                "Retrieve Text from "+elementName,
+                waitForElementToBeVisible(element).getText().trim(),
+                "Retrieve Text from "+elementName+":"+element.getText(),
                 "Failed to Retrieve Text from "+elementName
                 );
     }
