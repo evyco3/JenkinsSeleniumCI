@@ -16,7 +16,7 @@ public class LoginPage extends BasePage {
     private WebElement loginBtn;
     @FindBy(css = "div.top-bar div.item")
     private WebElement successLoginMsg;
-    @FindBy(css = "div.negative.message")
+    @FindBy(css = "div.negative.message p")
     private WebElement failLoginMsg;
 
 

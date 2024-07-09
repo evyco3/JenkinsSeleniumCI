@@ -12,8 +12,8 @@ public final class LoginData {
     public static Object[][]getData(){
         return new Object[][]{
                 {"fashion@example.com","sylius","valid login","Hello Lyla Herman!"},
-                {"unknownEmail@walla.com","sylius","invalid email","Error Invalid credentials."},
-                {"fashion@example.com","wrongPassword","invalid password","Error Invalid credentials."},
+                {"unknownEmail@walla.com","sylius","Invalid credentials."},
+                {"fashion@example.com","wrongPassword","invalid password","Invalid credentials."},
         };
     }
 }
