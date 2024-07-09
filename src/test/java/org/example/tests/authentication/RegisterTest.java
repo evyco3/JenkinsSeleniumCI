@@ -17,7 +17,7 @@ import static org.example.framework.utils.AssertionUtils.assertEquality;
 public class RegisterTest extends BaseTest {
 
     @Test(dataProvider = "registerData", dataProviderClass = RegisterData.class)
-    @Parameters({"firstName", "lastName", "email", "password", "verification", "expectedMessage"})
+    @Parameters({"firstName", "lastName", "email", "password", "verification","operation", "expectedMessage"})
     @Story("User Registration Scenarios")
     @Description("Test various user registration scenarios with different sets of data.")
     public void testUserRegistrationScenarios(String firstName, String lastName, String email, String password, String verification, String operation, String expectedMessage) {

@@ -15,7 +15,7 @@ public final class RegisterData {
     public static Object[][]getData(){
         String password=getPassword();
         return new Object[][]{
-                {getFirstName(),getLastName(),getEmail(),password,password,"valid registration","Thank you for your registration"},
+                {getFirstName(),getLastName(),getEmail(),password,password,"valid registration","Thank you for your registration Check your inbox and verify your email address"},
                 {getFirstName(),getLastName(),"email.com",password,password,"invalid email format","This email is invalid."},
                 {getFirstName(),getLastName(),"fashion@example.com",password,password,"invalid email already in use","This email is already used."},
                 {getFirstName(),getLastName(),getEmail(),"1234567","a1b1c1","invalid passwords mismatch","The entered passwords don't match"},
