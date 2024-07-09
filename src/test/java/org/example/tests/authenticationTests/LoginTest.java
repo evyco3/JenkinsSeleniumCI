@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest {
     @Description("Test different login scenarios with different sets of data")
     public void testUserLoginScenarios(String email,String password,String operation,String expectedResult){
         String actualMessage=performLoginAndGetResponseMessage(email,password,operation);
-        System.out.println(actualMessage);
+        AssertionUtils.assertEquality(actualMessage,expectedResult,"Verify if actual Login Message Equals to expected Login Message");
     }
 
 
