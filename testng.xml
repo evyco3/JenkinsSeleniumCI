@@ -6,7 +6,8 @@
     </listeners>
     <test  name="D:/java/Jenkins" parallel="classes">
         <classes>
-            <class name="org.example.tests.authentication.RegisterTest"/>
+            <class name="org.example.tests.authenticationTests.RegisterTest"/>
+            <class name="org.example.tests.authenticationTests.LoginTest"/>
         </classes>
     </test>
 </suite>

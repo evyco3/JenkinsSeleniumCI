@@ -1,4 +1,4 @@
-package org.example.tests.authentication;
+package org.example.tests.authenticationTests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;

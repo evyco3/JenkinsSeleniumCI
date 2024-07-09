@@ -3,6 +3,10 @@ package org.example.framework.data;
 import com.github.javafaker.Faker;
 import org.testng.annotations.DataProvider;
 
+/**
+ * a Simple class to provide data using faker library to registration tests
+ */
+
 public final class RegisterData {
 
     private static final Faker faker =new Faker();
