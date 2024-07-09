@@ -8,7 +8,6 @@ import org.example.framework.pages.authentication.LoginPage;
 import org.example.framework.pages.home.HomePage;
 import org.example.framework.utils.AssertionUtils;
 import org.example.tests.BaseTest;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -37,6 +36,7 @@ public class LoginTest extends BaseTest {
                 .navigateToLoginPage()
                 .performLogin(email,password,false, LoginPage.class)
                 .getLoginResponseMessage(operation);
+
 
     }
 }

@@ -24,5 +24,4 @@ public class NavigateToAuthentication extends BasePage {
         return new LoginPage();
     }
 
-
 }

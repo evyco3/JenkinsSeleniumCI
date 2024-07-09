@@ -7,7 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
-
     @FindBy(css = "#_username")
     private WebElement email;
     @FindBy(css = "#_password")
@@ -27,7 +26,7 @@ public class LoginPage extends BasePage {
             click(this.loginBtn,"login button");
             if(criteria){
                 waitForPageTitleToContain("");
-                LoggerUtils.log(getClass(),LogType.INFO,"Login Success ,Moving to HomePage");
+                LoggerUtils.log(getClass(), LogType.INFO,"Login Success ,Moving to HomePage");
             }
             return nextPageClass.getDeclaredConstructor().newInstance();
         }catch (Exception e){
